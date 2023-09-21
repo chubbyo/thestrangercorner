@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sbstyle.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-right">
+                <a href="index.html">HomePage</a>
+                <a href="soundboard.html">Lindsay L</a>
+                <a href="chaeunwoo.html">ChaEunwoo</a>
+                <a class="active" href="numbergame.html">Number game</a>
+            </div>
+        </nav>
+    </div>
+
+    <style>
+        #imageContainer {
+            display: none;
+        }
+    </style>
+
+    <div class="center">
+        <div class="ngh1">
+            <h1>Number Guessing Game</h1>
+        </div>
+    </div>
+    <div class="center">
+        <div class="ngp">
+            <p>Guess a number from <span>1</span> to <span>17</span>:</p>
+            <div class="ngp2">
+                <p>You have <span>5</span> attempts, goodluck~</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <!-- notice how  the input, button and p have an ID?-->
+        <!-- This is so our Javascript can identify these elements and manipulate them-->
+        <input type="number" id="guessField">
+    </div>
+    <div class="centersub">
+        <button class="guessSubmit" id="guessSubmit">Submit Guess</button>
+    </div>
+    <div class-="center">
+        <div class="message">
+            <p id="message"></p>
+        </div>
+    </div>
+    <div class="center">
+        <img id="imageContainer" src="pics/hapi.gif" alt="congrats" width="700px">
+    </div>
+        <!-- Much like we link an external CSS sheet here an external javascript is being linked-->
+        <script src="numberGuessLogic.js"></script>
+
+
+    <div class="contactng">
+        <p>Contact us:</p>
+        <p>393477@stcuthberts.school.nz</p>
+    </div>
+</body>
+</html>

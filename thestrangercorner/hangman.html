@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hangman Game</h1>
+    <div class="word" id="word-display"></div>
+    <div class="keyboard" id="keyboard"></div>
+
+    <script>
+        // Hangman game logic
+        const words = ["hangman", "javascript", "programming", "developer", "computer"];
+        let selectedWord = words[Math.floor(Math.random() * words.length)];
+        let guessedWord = [];
+        let maxAttempts = 6;
+        let wrongAttempts = 0;
+
+        // Initialize the guessed word
+        for (let i = 0; i < selectedWord.length; i++) {
+            guessedWord.push("_");
+        }
+
+        // Function to update the display
+        function updateDisplay() {
+            document.getElementById("word-display").textContent = guessedWord.join(" ");
+            document.getElementById("keyboard").innerHTML = "";
+        }
+
+                // Function to check if the letter is in the word
+                function checkLetter(letter) {
+            let found = false;
+            for (let i = 0; i < selectedWord.length; i++) {
+                if (selectedWord[i] === letter) {
+                    guessedWord[i] = letter;
+                    found = true;
+                }
+            }
+            if (!found) {
+                wrongAttempts++;
+            }
+            updateDisplay();
+            checkGameStatus();
+        }
+
+        // Function to check if the game is won or lost
+        function checkGameStatus() {
+            if (guessedWord.join("") === selectedWord) {
+                alert("Congratulations! You won!");
+                resetGame();
+            } else if (wrongAttempts === maxAttempts) {
+                alert("Game over! The word was: " + selectedWord);
+                resetGame();
+            }
+        }
+
+                // Function to reset the game
+                function resetGame() {
+            selectedWord = words[Math.floor(Math.random() * words.length)];
+            guessedWord = [];
+            wrongAttempts = 0;
+            for (let i = 0; i < selectedWord.length; i++) {
+                guessedWord.push("_");
+            }
+            updateDisplay();
+        }
+
+        // Initialize the game
+        updateDisplay();
+
+        // Create letter buttons
+        for (let i = 0; i < 26; i++) {
+            const letter = String.fromCharCode(65 + i); // A-Z
+            const letterButton = document.createElement("button");
+            letterButton.textContent = letter;
+            letterButton.classList.add("letter");
+            letterButton.addEventListener("click", () => {
+                letterButton.disabled = true;
+                checkLetter(letter.toLowerCase());
+            });
+            document.getElementById("keyboard").appendChild(letterButton);
+        }
+    </script>
+
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .word {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .keyboard {
+            margin-top: 20px;
+        }
+        .letter {
+            font-size: 18px;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 1px solid #333;
+            cursor: pointer;
+        }
+    </style>
+

@@ -1,0 +1,385 @@
+body {
+    background-color: rgb(0, 0, 0);
+    border-right:50px double rgb(122, 0, 0) ;
+    border-left:50px double rgb(122, 0, 0);
+    border-radius: 100px;
+   }
+ /* Style the navbar */
+
+h2{
+  color: #74747460;
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  font-size: 750%;
+  display: flex;
+  justify-content: last baseline;
+  margin-left: 10%;
+  margin-top: -0.5%;
+  margin-bottom: -6.5%;
+}
+
+.navbar {
+  background-color: #5f5f5f;
+  width: auto;
+  color: #d2d2d2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 15px;
+  display: flex;
+  border-top:#bbbbbbac solid 10px ;
+  border-bottom:#bbbbbbac solid 10px ;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 0.5%;
+  border-radius: 10px;
+  }
+
+  .header {
+    overflow: hidden;
+   }
+   .header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 25px;
+    border-radius: 4px;
+   }
+   .header a:hover {
+    background-color: rgb(183, 0, 0);
+    color: #bbbbbb;
+   }
+   .header a.active {
+    text-decoration: underline;
+    text-underline-offset: 10%;
+    text-decoration-color: rgb(122, 0, 0);
+    color: rgb(122, 0, 0);
+   }
+   
+
+/* Style the links on the right */
+.navbar a {
+  color: #d2d2d2;
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  width: 140px;
+  }
+
+.navbar-right {
+  align-items: right;
+}
+
+.logo{
+  margin-left: 20px;
+}
+
+       /* First Page container */
+.firstpage {
+    background-color: #dedede;
+    align-items: right;
+    width: 60%;
+    height: 100%;
+    margin: 20px auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    font-family: "Brush Script MT", Brush Script Std, cursive;
+    margin-top: 7.5%;
+    margin-right: 20px;
+    border: 20px solid rgb(122, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: inset 5px 5px 5px rgba(34, 34, 34, 0.61); 
+    line-height: 100%;
+   }
+   
+   h1{
+    font-size: 400%;
+   }
+
+   p{
+    font-size: 300%;
+   }
+
+   .indexflex1{
+    display: flex;
+    justify-content: center;
+   }
+   
+   .homebackground {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+   }
+   
+   /* Second Page container */
+   .secondpage {
+    background-color: #dedede;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    font-family: "Brush Script MT", Brush Script Std, cursive;
+    margin-top: -2%;    
+    margin-right: auto;
+    margin-left: auto;
+    border: 20px solid rgb(122, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: inset 5px 5px 5px rgba(34, 34, 34, 0.61); 
+    line-height: 100%;
+   }
+   
+   
+   
+   /* Third Page container */
+   .thirdpage {
+    background-color: #dedede;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-family: "Brush Script MT", Brush Script Std, cursive;
+    margin-top: 3%;    
+    margin-right: auto;
+    margin-left: auto;
+    border: 20px solid rgb(122, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: inset 5px 5px 5px rgba(34, 34, 34, 0.61); 
+    line-height: 100%;
+   }
+
+.center {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centercewb {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100%;
+}
+
+.sbtitle{
+  text-align: center;
+  color: rgb(122, 0, 0);
+  text-shadow: 5px 5px 4px #333333;
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  font-size: 160%;
+  margin-top: -5%;
+  margin-bottom: -3%;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 8px double rgb(122, 0, 0);
+  cursor: pointer;
+  background-color: #dedede;
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  -webkit-text-fill-color: rgb(83, 11, 19);
+  font-size: 200%;
+}
+
+.centersub {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+button:active{
+  box-shadow: inset 0px 2px 10px 3px  rgba(34, 34, 34, 0.61); 
+}
+
+.grid {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  display: grid;
+  grid-gap: 4%;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 100px);
+  position: relative;
+  z-index: 2;
+
+}
+
+.soundimg{
+  max-width: 35%;
+  height: auto;
+}
+
+.ngh1{
+  text-align: center;
+  color: rgb(122, 0, 0);
+  text-shadow: 5px 5px 4px #333333;
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  font-size: 180%;
+}
+
+.ngp{
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: -5%;
+  font-size: 90%;
+  color: #dedede;
+}
+
+.ngp2{
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 60%;
+  margin-top: -8%;
+  color: #dedede;
+}
+
+.message{
+  text-align: center;
+  font-size: 50%;
+  color: white;
+
+}
+
+.contact{
+  color: #dedede;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 30%;
+  margin-top: 8%;
+}
+
+.contactsb{
+  color: #dedede;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 30%;
+  padding-top: 20%;
+}
+
+.contactng{
+  color: #dedede;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 30%;
+  padding-top: 500px;
+}
+
+.leftll{
+  justify-content: flex-start;
+  align-items: left;
+  margin-left: 20%;
+  margin-right: -3%;
+}
+
+.centerll{
+  justify-content: center;
+  align-items: center;
+}
+
+.rightll{
+  justify-content: flex-end;
+  align-items: right;
+  margin-right: 20%;
+  margin-left: 2%;
+}
+
+.leftcew{
+  justify-content: flex-start;
+  align-items: left;
+  margin-left: 250px;
+  margin-right: -3%;
+  margin-top: -6%;
+}
+
+.centercew{
+  justify-content: center;
+  align-items: center;
+  padding-right: 60px;
+  padding-left: 10px;
+  margin-top: 0%;
+}
+
+.rightcew{
+  justify-content: flex-end;
+  align-items: right;
+  margin-right: 300px;
+  margin-left: 2%;
+}
+
+.container{
+  display: flex;
+}
+
+.pic3ll{
+  align-items: left;
+  margin-right: 20%;
+  margin-left: 0%;
+  margin-top: -15%;
+  position: relative;
+  z-index: 1;
+}
+
+.pic2ll{
+  justify-content: flex-end;
+  align-items: right;
+  margin-right: -40%;
+  margin-left: 82%;
+  margin-top: -40%;
+  position: relative;
+  z-index: 1;
+}
+
+span{
+  color: rgb(216, 0, 0);
+  text-shadow: #5f5f5f;
+}
+
+.pic4cew{
+  align-items: left;
+  margin-right: 20%;
+  margin-left: 0%;
+  margin-top: -32%;
+  position: relative;
+  z-index: 1;
+}
+
+.pic5cew{
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40%;
+  z-index: 1;
+}
+
+.pic6cew{
+  justify-content: flex-end;
+  align-items: right;
+  margin-right: -40%;
+  margin-left: 70%;
+  margin-top: -65%;
+  position: relative;
+  z-index: 1;
+}
