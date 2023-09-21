@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sbstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic soundboard</title>
+    <script type="text/javascript">
+        function play_sound(clicked_id) {
+          var audio = new Audio(clicked_id + ".mp3");
+          audio.play();
+        }
+      </script>
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar">
+        <div class="navbar-right">
+            <a href="index.html">HomePage</a>
+            <a class="active" href="soundboard.html">Lindsay L</a>
+            <a href="chaeunwoo.html">ChaEunwoo</a>
+            <a href="numbergame.html">Number game</a>
+        </div>
+    </nav>
+</div>
+
+<div class="sbtitle">
+  <h1>Lindsay Lin</h1>
+</div>
+
+  <div class="container">
+    <div class="leftll">
+      <img src = "pics/5.png" alt="lindsay" width="55%">
+    </div>
+    <div class="centerll">
+      <img src = "pics/4.png" alt="lindsay" width="100%">
+    </div>
+    <div class="rightll">
+      <img src = "pics/1.png" alt="lindsay" width="105%">
+    </div>
+
+  </div>
+        <div class="center">
+          <div class="grid">
+          <button id="mp3/hello" onClick="play_sound(this.id)">Hello</button>
+          <button id="mp3/yes" onClick="play_sound(this.id)">Yes</button>
+          <button id="mp3/no" onClick="play_sound(this.id)">No</button>
+          <button id="mp3/howru" onClick="play_sound(this.id)">How are you</button>
+          <button id="mp3/imfine" onClick="play_sound(this.id)">I'm fine</button>
+          <button id="mp3/ty" onClick="play_sound(this.id)">Thank yew</button>
+          <button id="mp3/ariachant" onClick="play_sound(this.id)">The Aria Chant</button>
+          <button id="mp3/chinglish" onClick="play_sound(this.id)">A chinglish song</button>
+          <button id="mp3/bye" onClick="play_sound(this.id)">Bye</button>
+          </div>
+        </div>
+  </div>    
+
+  <div class="pic3ll">
+    <img src="pics/3.png" alt="lindsay" width="60%">
+  </div>
+
+  <div class="pic2ll">
+    <img src="pics/2.png" alt="lindsay" width="30%">
+  </div>
+
+  <div class="contactsb">
+    <p>Contact us:</p>
+    <p>393477@stcuthberts.school.nz</p>
+  </div>
+</body>
+</html>

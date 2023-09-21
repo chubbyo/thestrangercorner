@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sbstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic soundboard</title>
+    <script type="text/javascript">
+        function play_sound(clicked_id) {
+          var audio = new Audio(clicked_id + ".mp3");
+          audio.play();
+        }
+      </script>
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar">
+        <div class="navbar-right">
+            <a href="index.html">HomePage</a>
+            <a href="soundboard.html">Lindsay L</a>
+            <a class="active" href="chaeunwoo.html">ChaEunwoo</a>
+            <a href="numbergame.html">Number game</a>
+        </div>
+    </nav>
+</div>
+
+<div class="sbtitle">
+  <h1>Cha Eun Woo</h1>
+</div>
+
+  <div class="container">
+    <div class="leftcew">
+      <img src = "pics/e2.PNG" alt="eunwoo" width="100%">
+    </div>
+    <div class="centercew">
+      <img src = "pics/e1.PNG" alt="eunwoo" width="140%">
+    </div>
+    <div class="rightcew">
+      <img src = "pics/e3.PNG" alt="eunwoo" width="100%">
+    </div>
+
+  </div>
+        <div class="center">
+          <div class="grid">
+          <button id="mp3/ottoke" onClick="play_sound(this.id)">Ottoke Song</button>
+          <button id="mp3/hmm" onClick="play_sound(this.id)">Hmm</button>
+          <button id="mp3/thatssad" onClick="play_sound(this.id)">That's sad</button>
+          <button id="mp3/imgood" onClick="play_sound(this.id)">I'm good</button>
+          <button id="mp3/yup" onClick="play_sound(this.id)">Yup</button>
+          <button id="mp3/suchagoodnight" onClick="play_sound(this.id)">Suchagoodnight</button>
+          <button id="mp3/lovesofine" onClick="play_sound(this.id)">Love So Fine</button>
+          <button id="mp3/rainbowfalling" onClick="play_sound(this.id)">RainbowFalling</button>
+          <button id="mp3/iloveyou" onClick="play_sound(this.id)">SURPRISE</button>
+          </div>
+        </div>
+  </div>    
+
+  <div class="pic4cew">
+    <img src="pics/e4.PNG" alt="eunwoo" width="40%">
+  </div>
+
+  <div class="pic6cew">
+    <img src="pics/e6.PNG" alt="eunwoo" width="40%">
+  </div>
+
+
+  <div class="contactsb">
+    <p>Contact us:</p>
+    <p>393477@stcuthberts.school.nz</p>
+  </div>
+</body>
+</html>
