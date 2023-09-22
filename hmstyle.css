@@ -173,10 +173,16 @@ img{
 
 .messages2{
     text-align: center;
-    color: #dedede;
+    color: rgb(182, 0, 0);
     font-size: 700%;
-    margin-top: -8%;
+    margin-top: -20%;
+    text-shadow: 1px 1px 10px #ffffff;;
     font-family: "Brush Script MT", Brush Script Std, cursive;
+    text-shadow:
+        -5px -5px 0 black, /* Top-left border shadow */
+        5px -5px 0 black, /* Top-right border shadow */
+        -5px 5px 0 black, /* Bottom-left border shadow */
+        5px 5px 0 black;
 }
 
 button{
@@ -218,3 +224,19 @@ h3{
     font-size: 30%;
     padding-top: 500px;
   }
+
+  .keyboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container takes the full height of its parent */
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(6, 100px); /* Six columns, each 100px wide */
+    grid-template-rows: repeat(4, 70px); /* Four rows, each 70px high */
+    justify-items: center; /* Center horizontally within each cell */
+    align-items: center; /* Center vertically within each cell */
+    grid-gap: 5px; /* Adjust the gap between columns */
+}

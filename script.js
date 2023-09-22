@@ -81,13 +81,15 @@ function disableKeyboard() {
 
 function setupKeyboard() {
     keyboard.innerHTML = '';
-    const rows = 7; // Number of rows
+    const rows = 4; // Number of rows
     const columns = 6; // Number of columns
 
     keyboard.style.display = 'grid'; // Set the display property to 'grid'
-    keyboard.style.gridTemplateColumns = `repeat(${columns}, 1fr)`; // Define the number of columns
-    keyboard.style.gridTemplateRows = `repeat(${rows}, 1fr)`; // Define the number of rows
-    keyboard.style.placeItems = 'center'; // Center both horizontally and vertically
+    keyboard.style.gridTemplateColumns = `repeat(${columns}, 100px)`; // Define the number of columns
+    keyboard.style.gridTemplateRows = `repeat(${rows}, 70px)`; // Define the number of rows
+    keyboard.style.justifyItems = 'center'; // Center horizontally
+    keyboard.style.alignItems = 'center'; // Center vertically
+    keyboard.style.gridGap = '5px'; // Adjust the gap between columns
 
     for (let i = 65; i <= 90; i++) {
         const letter = String.fromCharCode(i).toLowerCase();
